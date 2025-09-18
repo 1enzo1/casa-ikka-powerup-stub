@@ -16,6 +16,7 @@
       --accent-2: #2f4a3a; /* verde musgo escuro */
       --card: #ffffff;
       --ring: rgba(0,0,0,.06);
+      --header-h: 96px; /* reserva para logos fixas */
     }
     *{box-sizing:border-box}
     html,body{height:100%}
@@ -37,7 +38,7 @@
     .logo.right{right:16px}
 
     /* Conteúdo central */
-    .wrap{min-height:100%; display:grid; place-items:center; padding:84px 16px 24px}
+    .wrap{min-height:100%; display:grid; place-items:center; padding:calc(var(--header-h) + 16px) 16px 24px}
     .card{
       width:min(920px, 100%); background:var(--card); border-radius:20px; padding:28px; box-shadow: 0 10px 30px var(--ring), 0 1px 0 rgba(255,255,255,.5) inset;
       border:1px solid rgba(0,0,0,.05);
@@ -73,9 +74,11 @@
     code{background:#f6f8fa; padding:.15rem .4rem; border-radius:6px; border:1px solid rgba(0,0,0,.06)}
 
     @media (max-width: 860px){
+      :root{ --header-h: 112px; }
       .hero{grid-template-columns: 1fr;}
       .hero-media{order:-1; height: 220px}
       .logo img{height:68px}
+      .grid{grid-template-columns: 1fr}
     }
   </style>
 </head>
