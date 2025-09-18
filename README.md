@@ -6,7 +6,8 @@ Este repositório serve apenas como **página estática** para preencher o campo
 ## Publicação no GitHub Pages
 1. Habilite o GitHub Pages em **Settings → Pages**.
 2. Selecione **Deploy from a branch**, branch `main`, pasta `/ (root)`.
-3. A URL pública ficará em: `https://SEU_USUARIO.github.io/NOME_DO_REPO/`.
+3. A URL pública ficará em: `https://1enzo1.github.io/casa-ikka-powerup-stub
+/`.
 
 ## Arquivos
 - `index.html` – página principal (stub)
