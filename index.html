@@ -31,7 +31,8 @@
 
     /* Logos nos cantos */
     .logo{position:fixed; top:16px; z-index:10; display:flex; align-items:center; gap:.5rem; opacity:.95}
-    .logo img{display:block; height:40px; width:auto; object-fit:contain; filter: drop-shadow(0 2px 8px rgba(0,0,0,.08));}
+    .logo img{display:block; height:80px; width:auto; object-fit:contain; filter: drop-shadow(0 2px 8px rgba(0,0,0,.08));}
+    .logo.left img{border-radius:10px}
     .logo.left{left:16px}
     .logo.right{right:16px}
 
@@ -74,7 +75,7 @@
     @media (max-width: 860px){
       .hero{grid-template-columns: 1fr;}
       .hero-media{order:-1; height: 220px}
-      .logo img{height:34px}
+      .logo img{height:68px}
     }
   </style>
 </head>
